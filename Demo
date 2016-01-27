@@ -9,13 +9,13 @@ void main()
 	Rect rect1(256, 256, 128, 128);
 	Rect rect2(224, 224, 128, 128);
 
-	Mat roi1, roi2;
+	Mat roi1;
 	image(rect1).copyTo(roi1);
-	image(rect2).copyTo(roi2);
-
 	imshow("1", roi1);
 	waitKey(0);
 
+	Mat roi2;
+	image(rect2).copyTo(roi2);
 	imshow("2", roi2);
 	waitKey(0);
 
@@ -30,7 +30,7 @@ void main()
 	image(rect4).copyTo(roi4);
 	imshow("4", roi4);
 	waitKey(0);
-	
+
 	Rect rect5(10, 10, 128, 128);
 	roi1.copyTo(image(rect5));
 	imshow("5", image);
