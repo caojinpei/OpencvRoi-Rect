@@ -1,3 +1,5 @@
+// Copy from the file: core.hpp
+
 typedef Rect_<int> Rect;
 
 /*!
