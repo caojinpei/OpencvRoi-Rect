@@ -30,4 +30,9 @@ void main()
 	image(rect4).copyTo(roi4);
 	imshow("4", roi4);
 	waitKey(0);
+	
+	Rect rect5(10, 10, 128, 128);
+	roi1.copyTo(image(rect5));
+	imshow("5", image);
+	waitKey(0);
 }
